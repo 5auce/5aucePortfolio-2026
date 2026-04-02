@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body id="homepage">
+    
+<nav class="navbar">
+    <div class="navleft">
+        <button class="dropbtn">Works <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <a href="works/animation.html">Animation</a>
+            <a href="works/videography.html">Videography</a>
+            <a href="works/design.html">Design</a>
+            <a href="works/videoEditing.html">Video Editing</a>
+            <a href="works/illustration.html">Illustration</a>
+        </div>
+    </div>
+    <div class="navcenter" >
+        <a href="index.html" class="logo">Home</a>
+    </div>
+    <div class="navright">
+        <a href="info/about.html">About</a>
+    </div>
+</nav>
+
+<!-- INSERT VID -->
+<video autoplay muted loop class="screen">
+    <source src="assets/ascii-art.mp4" type="video/mp4">
+</video>
+
+<!--DRAGGABLE-->
+<div id="draggableArea">
+    <div class="draggable">
+        <a href="works/videography.html">
+            <img src="assets/videography.png" alt="gimbal for videography" class="rotate">
+            <span class="title">Videography</span>
+        </a>
+    </div>
+    <div class="draggable">
+        <a href="works/videoEditing.html">
+            <img src="assets/editing.png" alt="earpiece for editing" class="rotate2">
+            <span class="title">Video Editing</span>
+        </a>
+    </div>
+    <div class="draggable">
+        <a href="works/illustration.html">
+            <img src="assets/illustration.png" alt="notebook for illustration" class="rotate2">
+            <span class="title">Illustration</span>
+        </a>
+    </div>
+    <div class="draggable">
+        <a href="works/design.html">
+            <img src="assets/design.png" alt="glasses for design" class="rotate">
+            <span class="title">Design</span>
+        </a>
+    </div>
+    <div class="draggable">
+        <a href="works/animation.html">
+            <img src="assets/animation.png" alt="wacom and mouse for animation">
+            <span class="title">Animation</span>
+        </a>
+    </div>
+</div>
+
+<footer>
+    <div class="footerlinks">
+        <a href="https://www.threads.com/@5aucecr38" target="_blank"><i class="fa-brands fa-threads" style="font-size: 24px;"></i></a>
+        <a href="https://www.instagram.com/5aucecr38" target="_blank"><i class="fa-brands fa-instagram" style="font-size: 24px"></i></a>
+        <a href="https://www.linkedin.com/in/mieow" target="_blank"><i class="fa-brands fa-linkedin" style="font-size:24px"></i></a>
+    </div>
+    <div class="copyright">   
+        <p>&#169 2026.</p>
+        <p>Ow Mi-e</p>
+    </div> 
+</footer>
+    
+<script src="javascript/app.js"></script>
+</body>
+</html>

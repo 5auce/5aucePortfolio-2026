@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body id="about">
+
+<nav class="navbar">
+    <div class="navleft">
+        <button class="dropbtn">Works <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <a href="../works/animation.html">Animation</a>
+            <a href="../works/videography.html">Videography</a>
+            <a href="../works/design.html">Design</a>
+            <a href="../works/videoEditing.html">Video Editing</a>
+            <a href="../works/illustration.html">Illustration</a>
+        </div>
+    </div>
+    <div class="navcenter" >
+        <a href="../index.html" class="logo">Home</a>
+    </div>
+    <div class="navright">
+        <a href="../info/about.html">About</a>
+    </div>
+</nav>
+
+
+<div class="flex">
+    <model-viewer
+        src="../assets/card.glb"
+        alt="3D Model"
+        auto-rotate
+        camera-controls
+        shadow-intensity="0"
+        style="background-color: transparent;"
+        camera-orbit="0deg 90deg 20m">
+    </model-viewer>
+
+    <div class="text">
+        <p><a href="mailto:madeby5auce5@gmail.com" target="_blank">madeby5auce5@gmail.com</a></p>
+            <br>
+        <p>I&#39;m an animator currently pursuing a BFA in Media Arts at ADM, passionately exploring CGI/VFX, 2D/3D animation, and design.</p>
+            <br>
+        <p>I aspire to live in the present and build a better me with every passing day.</p>
+    </div>
+</div>
+
+<div class="list">
+    <div class="list-item">
+        <p>Proficient in:</p>
+        <ul>
+            <li>Adobe Photoshop</li>
+            <li>Adobe Premiere Pro</li>
+            <li>Google Workspace</li>
+        </ul>
+    </div>
+
+    <div class="list-item">
+        <p>Currently learning:</p>
+        <ul>
+            
+            <li>Autodesk Maya</li>
+            <li>Foundry NukeX</li>
+            <li>Blender</li>
+            <li>Adobe After Effects</li>
+            <li>TVPaint</li>
+            <li>Visual Code Studio</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <div class="footerlinks">
+        <a href="https://www.threads.com/@5aucecr38" target="_blank"><i class="fa-brands fa-threads" style="font-size: 24px;"></i></a>
+        <a href="https://www.instagram.com/5aucecr38" target="_blank"><i class="fa-brands fa-instagram" style="font-size: 24px"></i></a>
+        <a href="https://www.linkedin.com/in/mieow" target="_blank"><i class="fa-brands fa-linkedin" style="font-size:24px"></i></a>
+    </div>
+    <div class="copyright">   
+        <p>&#169 2026.</p>
+        <p>Ow Mi-e</p>
+    </div> 
+</footer>
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script src="../javascript/app.js"></script>
+</body>
+</html>
