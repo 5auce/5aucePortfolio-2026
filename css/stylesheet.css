@@ -120,6 +120,7 @@ button {
 .draggable {
     position: absolute;
     z-index: 10;
+    touch-action: none;
 }
 
 .draggable img {
