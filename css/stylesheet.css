@@ -187,7 +187,7 @@ button {
     opacity: 0;
     transition: opacity 0.3s;
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 0.2rem;
 }
 
 .draggable a:hover .title {
@@ -478,6 +478,7 @@ footer p{
 
     .tab-button {
         flex-wrap: wrap;
+        text-align: center;
     }
 
     .tablink {
@@ -495,7 +496,7 @@ footer p{
 
 @media screen and (max-width: 480px) {
     body {
-        font-size: 0.2rem;
+        font-size: 0.9rem;
     }
 
     .desc h3 {
@@ -516,7 +517,7 @@ footer p{
     .navright {
         position: static;
         text-align: center;
-        margin: 5px 0;
+        margin: 5px auto;
     }
 
     .navcenter .logo {
@@ -531,7 +532,8 @@ footer p{
     @media (max-width: 480px) {
     .reels video,
     .reels iframe,
-    .reels a {
+    .reels a,
+    .reels img {
         width: 85vw;
         height: auto;
     }

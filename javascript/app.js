@@ -22,7 +22,6 @@ function makeDraggable(elmnt) {
     document.onmouseup = closeDragElement;
     document.onmousemove = elementDrag;
 
-    //  When pressing down → closed hand
     img.style.cursor = 'url("../assets/cursors/closecursor.png") 8 8, grabbing';
   });
 
@@ -43,7 +42,7 @@ function makeDraggable(elmnt) {
     document.onmouseup = null;
     document.onmousemove = null;
 
-    //  Return to pointer if still hovering link, otherwise open hand
+    
     if (img.matches(':hover') && link && link.matches(':hover')) {
       img.style.cursor = 'url("../assets/cursors/pointercursor.png") 4 4, pointer';
     } else {
@@ -66,7 +65,7 @@ function makeDraggable(elmnt) {
     }
   });
 
-  //  Prevent accidental click when dragging
+
   if (link) {
     link.addEventListener('click', (e) => {
       if (isDragging) e.preventDefault();
@@ -74,7 +73,34 @@ function makeDraggable(elmnt) {
   }
 }
 
+img.addEventListener('touchstart', (e) => {
+  const touch = e.touches[0];
 
+  clickStarted = true;
+  isDragging = false;
+
+  pos3 = touch.clientX;
+  pos4 = touch.clientY;
+
+  document.ontouchend = closeDragElement;
+  document.ontouchmove = elementDragTouch;
+}, { passive: false });
+
+
+function elementDragTouch(e) {
+  e.preventDefault();
+
+  const touch = e.touches[0];
+  isDragging = true;
+
+  pos1 = pos3 - touch.clientX;
+  pos2 = pos4 - touch.clientY;
+  pos3 = touch.clientX;
+  pos4 = touch.clientY;
+
+  elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+  elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+}
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
