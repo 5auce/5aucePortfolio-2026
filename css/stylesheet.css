@@ -291,6 +291,23 @@ button {
     min-height: auto;
 }
 
+#CGIVFX .reels img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    object-fit: cover;
+    margin: 10px auto;
+    display: block;
+}
+
+#CGIVFX .modal img {
+    width: auto;
+    max-width: 90vw;
+    height: auto;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
 .image-row {
     display: flex;
     gap: 10px;
